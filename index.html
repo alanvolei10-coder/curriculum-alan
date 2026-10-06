@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Alan Polo Meneses | Portafolio de desarrollador backend Java</title>
+  <meta name="description" content="Portafolio de Alan Polo Meneses, desarrollador backend Java con Spring Boot, Spring Security, Spring AI, PostgreSQL y Docker.">
+  <meta name="theme-color" content="#191e1e">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700;12..96,800&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
+  <link href="styles.css" rel="stylesheet">
+</head>
+<body data-bs-spy="scroll" data-bs-target="#menu" data-bs-offset="90" tabindex="0">
+
+  <nav class="navbar navbar-expand-md sticky-top site-nav" data-bs-theme="dark">
+    <div class="container">
+      <a class="navbar-brand d-flex align-items-center gap-2" href="#inicio">
+        <span class="brand-icon"><i class="bi bi-code-slash"></i></span>Mi portafolio
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu" aria-controls="menu" aria-expanded="false" aria-label="Abrir menú">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="menu">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="#proyectos">Proyectos</a></li>
+          <li class="nav-item"><a class="nav-link" href="#conocimientos">Conocimientos</a></li>
+          <li class="nav-item"><a class="nav-link" href="#formacion">Formación</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contacto">Contacto</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <header id="inicio" class="hero">
+    <div class="container">
+      <div class="row align-items-center g-5">
+        <div class="col-lg-7">
+          <div class="hero-head">
+            <div class="avatar" role="img" aria-label="Foto de Alan Polo Meneses">
+              <span>AP</span>
+              <img src="foto.jpg" alt="" onerror="this.remove()">
+            </div>
+            <div>
+              <h1>Alan Polo Meneses</h1>
+              <p class="hero-role mb-0">Desarrollador Backend Java</p>
+            </div>
+          </div>
+          <div class="story">
+    <p class="story-lead">¡Hola! Soy Alan, desarrollador backend especializado en Java.</p>
+    <p>Me apasiona construir el núcleo de las aplicaciones: desde la lógica de negocio y la arquitectura, hasta la gestión de datos y la seguridad. Mi experiencia se centra en el ecosistema Spring (Spring Boot, Security y Cloud), el diseño de APIs REST y el desarrollo de microservicios. Para la gestión de la información utilizo PostgreSQL y MySQL, aseguro la calidad del código mediante pruebas con JUnit y Mockito, y gestiono los despliegues con Docker.</p>
+    <p>Además, cuento con conocimientos en desarrollo frontend (HTML, CSS, JavaScript y Bootstrap). Esta visión integral me permite entender a la perfección el ciclo de vida del software, conectando eficientemente las bases de datos con la interfaz de usuario.</p>
+</div>
+          <div class="d-flex flex-wrap gap-2">
+            <a href="#proyectos" class="btn btn-brand btn-lg">Ver mis proyectos</a>
+            <a href="Curriculum_Alan_Polo_Meneses.pdf" class="btn btn-outline-brand btn-lg" download>
+              <i class="bi bi-download me-1"></i> Descargar CV
+            </a>
+          </div>
+        </div>
+
+        <div class="col-lg-5">
+          <figure class="response" aria-label="Resumen del perfil en formato JSON">
+            <figcaption class="response-bar">
+              <span class="method">GET</span> /api/perfil
+              <span class="status ms-auto">200 OK</span>
+            </figcaption>
+<pre class="response-body"><code><span class="ln">{</span>
+<span class="ln">  <i class="k">"nombre"</i>: <i class="s">"Alan Polo Meneses"</i>,</span>
+<span class="ln">  <i class="k">"rol"</i>: <i class="s">"Backend Java"</i>,</span>
+<span class="ln">  <i class="k">"framework"</i>: [<i class="s">"Spring Boot"</i>,</span>
+<span class="ln">    <i class="s">"Spring Security"</i>,</span>
+<span class="ln">    <i class="s">"Spring Cloud"</i>,</span>
+<span class="ln">    <i class="s">"Spring AI"</i>],</span>
+<span class="ln">  <i class="k">"bases_de_datos"</i>: [<i class="s">"PostgreSQL"</i>,</span>
+<span class="ln">    <i class="s">"MySQL"</i>],</span>
+<span class="ln">  <i class="k">"despliegue"</i>: [<i class="s">"Docker"</i>, <i class="s">"Nginx"</i>,</span>
+<span class="ln">    <i class="s">"AWS S3"</i>],</span>
+<span class="ln">  <i class="k">"proyectos_en_linea"</i>: <i class="n">2</i></span>
+<span class="ln">}</span></code></pre>
+          </figure>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section id="proyectos" class="section">
+      <div class="container">
+        <h2 class="section-title">Mis proyectos</h2>
+        <p class="section-intro">Dos sistemas que ya están en línea. De cada uno cuento qué hace, qué hice yo y con qué lo construí.</p>
+
+        <article class="project">
+          <div class="project-bar"><span></span><span></span><span></span><code>seda-tecnm.tech</code></div>
+          <div class="project-body">
+            <div class="row g-4">
+              <div class="col-lg-7">
+                <h3>SEDA</h3>
+                <p class="project-type">Sistema de Educación y Dirección Automatizada</p>
+                <h4>De qué trata</h4>
+                <p>Es una plataforma de tutoría académica institucional. Su asistente virtual, impulsado por Inteligencia Artificial, contesta dudas y orienta a los usuarios sin que alguien tenga que atenderlos uno por uno.</p>
+                <h4>Mi participación</h4>
+                <ul class="did">
+                  <li>Diseñé la arquitectura del backend que sostiene todo el sistema.</li>
+                  <li>Conecté el asistente virtual con Spring AI para que responda y guíe de forma automática.</li>
+                  <li>Organicé y guardé los datos en PostgreSQL.</li>
+                  <li>Creé los servicios REST que comunican la interfaz con los modelos de lenguaje, pensados para crecer sin romperse.</li>
+                </ul>
+              </div>
+              <div class="col-lg-5">
+                <p class="project-meta"><i class="bi bi-calendar3 me-2"></i>Mayo a septiembre de 2026<br><i class="bi bi-person-workspace me-2"></i>Desarrollador Backend</p>
+                <h4>Tecnologías</h4>
+                <ul class="tags"><li>Java</li><li>Spring AI</li><li>API REST</li><li>PostgreSQL</li></ul>
+                <a href="https://seda-tecnm.tech/" target="_blank" rel="noopener" class="btn btn-brand">Visitar el sitio <i class="bi bi-box-arrow-up-right ms-1"></i></a>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <article class="project">
+          <div class="project-bar"><span></span><span></span><span></span><code>venussm.com</code></div>
+          <div class="project-body">
+            <div class="row g-4">
+              <div class="col-lg-7">
+                <h3>Venuss</h3>
+                <p class="project-type">Plataforma e-commerce</p>
+                <h4>De qué trata</h4>
+                <p>Es una tienda en línea completa. Los clientes recorren el catálogo y compran, y quien administra el negocio controla los productos y las ventas desde un panel hecho a su medida.</p>
+                <h4>Mi participación</h4>
+                <ul class="did">
+                  <li>Programé el backend con Spring Boot: las reglas del negocio, los productos y las ventas.</li>
+                  <li>Con Spring Security definí quién puede entrar y qué puede hacer cada usuario.</li>
+                  <li>Construí el panel de administración para manejar el catálogo y revisar las ventas.</li>
+                  <li>Me encargué de publicar el sitio: contenedores Docker, Nginx como servidor web y AWS S3 para los archivos estáticos.</li>
+                </ul>
+              </div>
+              <div class="col-lg-5">
+                <p class="project-meta"><i class="bi bi-calendar3 me-2"></i>Mayo a julio de 2026<br><i class="bi bi-person-workspace me-2"></i>Desarrollador Backend</p>
+                <h4>Tecnologías</h4>
+                <ul class="tags"><li>Java</li><li>Spring Boot</li><li>Spring Security</li><li>Docker</li><li>Nginx</li><li>AWS S3</li></ul>
+                <a href="https://venussm.com/" target="_blank" rel="noopener" class="btn btn-brand">Visitar el sitio <i class="bi bi-box-arrow-up-right ms-1"></i></a>
+              </div>
+            </div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section id="conocimientos" class="section section-alt">
+      <div class="container">
+        <h2 class="section-title">Conocimientos</h2>
+        <div class="row g-4">
+          <div class="col-md-6 col-lg-4">
+            <h3 class="skill-h"><i class="bi bi-cpu"></i> Backend</h3>
+            <ul class="tags"><li>Java</li><li>Spring Boot</li><li>Spring Cloud</li><li>Spring Security</li><li>Microservicios</li></ul>
+          </div>
+          <div class="col-md-6 col-lg-4">
+            <h3 class="skill-h"><i class="bi bi-database"></i> Bases de datos</h3>
+            <ul class="tags"><li>PostgreSQL</li><li>MySQL</li><li>SQL</li></ul>
+          </div>
+          <div class="col-md-6 col-lg-4">
+            <h3 class="skill-h"><i class="bi bi-box-seam"></i> Testing y DevOps</h3>
+            <ul class="tags"><li>JUnit</li><li>Mockito</li><li>Docker</li></ul>
+          </div>
+          <div class="col-md-6 col-lg-4">
+            <h3 class="skill-h"><i class="bi bi-window"></i> Frontend</h3>
+            <ul class="tags"><li>HTML5</li><li>CSS3</li><li>JavaScript</li><li>Bootstrap</li></ul>
+          </div>
+          <div class="col-md-6 col-lg-8">
+            <h3 class="skill-h"><i class="bi bi-people"></i> Habilidades blandas</h3>
+            <p class="mb-0">Trabajo en equipo, comunicación asertiva, liderazgo y resiliencia.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="formacion" class="section">
+      <div class="container">
+        <h2 class="section-title">Formación académica</h2>
+        <div class="row g-4">
+          <div class="col-md-6">
+            <div class="edu">
+              <i class="bi bi-mortarboard"></i>
+              <div>
+                <h3>Ingeniería en Tecnologías de la Información y Comunicación</h3>
+                <p class="mb-0">Instituto Tecnológico de Apizaco</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="edu">
+              <i class="bi bi-code-slash"></i>
+              <div>
+                <h3>Curso de Desarrollo Web</h3>
+                <p class="mb-0">TodoCodeAcademy.com</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contacto" class="section contact">
+      <div class="container">
+        <h2 class="section-title">Hablemos</h2>
+        <p class="section-intro">Si tienes una vacante o un proyecto backend, con gusto te respondo.</p>
+        <div class="d-flex flex-wrap gap-3">
+          <a href="#contacto" class="btn btn-whatsapp btn-lg" data-contacto="wa" data-v="NTIyNDExNzg1NjE5"><i class="bi bi-whatsapp me-2"></i>Escríbeme por WhatsApp</a>
+          <a href="#contacto" class="btn btn-outline-light btn-lg" data-contacto="mail" data-v="bWVuZXNlc3BvbG9hbGFuQG91dGxvb2suY29t"><i class="bi bi-envelope me-2"></i>Escríbeme por correo</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <small>&copy; <span id="anio">2026</span> Alan Polo Meneses. Tlaxcala, México.</small>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="main.js"></script>
+</body>
+</html>
